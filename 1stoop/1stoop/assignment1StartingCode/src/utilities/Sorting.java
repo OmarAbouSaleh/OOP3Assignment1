@@ -4,6 +4,12 @@ import shapes.Shape3D;
 
 public class Sorting {
 
+	
+
+	/**
+	 * sorts an array of Shape3D objects using bubble sort
+	 * @param shapes from Shape3D
+	 */
 	public static void bubbleSort(Shape3D[] shapes) {
 		Shape3D temp;
 		for (int i = 0; i < shapes.length; i++) {
@@ -17,6 +23,13 @@ public class Sorting {
 		}
 	}
 	
+	/**
+	 * Sorts an array using Quick Sort
+	 * @param shapes
+	 * @param low starting index of array
+	 * @param high ending index of array
+	 * @return
+	 */
 	public static int quickSort(Shape3D[] shapes, int low, int high) {
 		double pivot = shapes[high].getTheVolume();
 		int i = (low - 1);
@@ -36,6 +49,10 @@ public class Sorting {
 	
 
 
+	/** 
+	 * Sorts an array using Insertion method
+	 * @param shapes 
+	 */
 	public static void insertionSort(Shape3D[] shapes) {
 		for (int i = 1; i < shapes.length; i++) {
 			Shape3D temp = shapes[i];
@@ -49,6 +66,10 @@ public class Sorting {
 			
 	}
 	
+	/**
+	 * Sorts an array using selection Sort method
+	 * @param shapes
+	 */
 	public static void selectionSort(Shape3D[] shapes) {
 		for (int i= 0; i < shapes.length -1; i++) {
 			int min_index = i;
@@ -63,6 +84,12 @@ public class Sorting {
 		}
 	}
 	
+	/**
+	 * Sorts array from shape3D objects using merge algorithm
+	 * @param shapes
+	 * @param left starting index
+	 * @param right ending index
+	 */
 	public static void mergeSort(Shape3D[] shapes, int left, int right) {
 		if (left < right) {
 			int middle= (left + right) / 2;
@@ -74,6 +101,13 @@ public class Sorting {
 		}
 	}
 	
+	/**
+	 * Helper method to merge two sub arrays into 1 single array
+	 * @param shapes
+	 * @param left
+	 * @param middle
+	 * @param right
+	 */
 	private static void merge(Shape3D[] shapes, int left, int middle, int right) {
 		int l1 = middle - left + 1;
 		int l2 = right - middle;
@@ -115,6 +149,9 @@ public class Sorting {
 		
 	}
 	
+	/** Sorts Shape3D objects using Shell sort algorithm
+	 * @param shapes
+	 */
 	public static void shellSort(Shape3D[] shapes) {
 		int n = shapes.length;
 		
