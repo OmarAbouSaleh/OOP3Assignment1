@@ -3,7 +3,9 @@
 ## Shell sort is an in-place comparison sort that geneeralizes the insertion sort to allow the exchange of items that are far apart. It rearranges the list of elements so that, starting anywhere, taking every n'th element produces a sorted list. 
 ## It starts by comparing lements that are a far apart and gradually brings them closer (gap becomes smaller), while fine-tuning the array. It's performance relies on the choice of gap sequence and is more efficient when sorting medium-sized files.
 ## Why is it helpful?
-	Saves  time. The initial bigger gaps partially sorts the array and by the time it becomes a small gap, there's less shuffling and since everything else is roughly in the right postions already. It's as if doing an insertion sort, but all the heavy lifting has been done earlier in the wider leaps (gaps.
+	Saves  time. The initial bigger gaps partially sorts the array and by the time it becomes a small gap,
+ 	there's less shuffling and since everything else is roughly in the right postions already. It's as if doing an insertion sort,
+  	but all the heavy lifting has been done earlier in the wider leaps (gaps).
 	
 ## Pseudocode:
 
