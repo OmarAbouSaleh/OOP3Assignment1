@@ -28,7 +28,7 @@ public class Sorting {
 	 * @param shapes
 	 * @param low starting index of array
 	 * @param high ending index of array
-	 * @return
+	 * @return index of pivot element after partition
 	 */
 	public static int quickSort(Shape3D[] shapes, int low, int high) {
 		double pivot = shapes[high].getTheVolume();
